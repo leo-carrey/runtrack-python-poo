@@ -25,17 +25,17 @@ class Livre:
     
     def verification(self):
         if self.disponible == True:
-            return "le livre est disponible"
+            return True
         else:
-            return "le livre n'est pas disponible"
+            return False
 
     def emprunter(self):
-        if self.disponible == True:
+        if self.verification() == True:
             self.disponible = False
             return "le livre a été emprunter"
     
     def rendre(self):
-        if self.disponible == False:
+        if self.verification() == False:
             self.disponible == True
             return "le livre est rendue"
 
