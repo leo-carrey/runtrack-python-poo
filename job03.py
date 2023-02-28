@@ -1,9 +1,9 @@
 class Livre:
-    def __init__(self, titre, auteur, nombre_depages, disponible):
+    def __init__(self, titre, auteur, nombre_depages):
         self.__titre = titre
         self.__auteur = auteur
         self.__nombre_depages = nombre_depages
-        self.disponible = disponible
+        self.disponible = True
 
     def modif_titre(self, titre):
         self.__titre = titre
@@ -39,8 +39,8 @@ class Livre:
             self.disponible == True
             return "le livre est rendue"
 
-Livre.disponible = True
-livre = Livre("Les miss","Jean",0, True)
+
+livre = Livre("Les miss","Jean",0)
 livre.modif_titre("Les misérables")
 livre.modif_auteur("Jean Valjean")
 print(livre.modif_nombre_depages(288))
