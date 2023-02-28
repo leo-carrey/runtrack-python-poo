@@ -17,7 +17,7 @@ class Personnage:
 
     def print_everything(self):
         pos=(self.x,self.y)
-        return f'Position is {pos}'
+        return f'Position is {pos}' 
     
 p = Personnage(0,0)
 p.gauche()

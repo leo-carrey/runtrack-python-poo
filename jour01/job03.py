@@ -6,4 +6,4 @@ class Operation:
 Operation.nombre1=3
 Operation.nombre2=7
 
-print(Operation.nombre1 + Operation.nombre2)
+print(Operation.nombre1 + Operation.nombre2) 

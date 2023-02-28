@@ -20,7 +20,7 @@ class Produit:
     def Afficher_prix(self):
         return self.prixHT
     
-Produit.TVA = 0.2
+Produit.TVA = 0.2 
 
 pomme = Produit("pomme", 3, Produit.TVA)
 banane = Produit("banane", 6, Produit.TVA)

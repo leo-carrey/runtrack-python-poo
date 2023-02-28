@@ -9,4 +9,4 @@ class Personne:
 p1 = Personne("John", "Doe")
 p2 = Personne("Jean", "Dupond")
 p1.SePresenter()
-p2.SePresenter()
+p2.SePresenter( )

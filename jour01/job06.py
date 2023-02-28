@@ -15,6 +15,6 @@ class Animal:
         return f'Le nom est {self.prenom} et son age et de {self.age}'
     
 A = Animal("prenom")
-print(A.Viellir())
+print(A.Viellir()) 
 A.Nommer('salameche')
 print(A.print_everything())
