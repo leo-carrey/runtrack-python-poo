@@ -14,9 +14,9 @@ class Livre:
         return self.__auteur
     
     def modif_nombre_depages(self, nombre_depages):
-        self.__nombre_depages = nombre_depages
-        if nombre_depages != int(nombre_depages):
-            self.__nombre_depages = 0
+        if nombre_depages == int(nombre_depages) and nombre_depages > 0:
+            self.__nombre_depages = nombre_depages
+        else:
             print("veuillez inserer un nombre entier positif !!!")
         return self.__nombre_depages
         
