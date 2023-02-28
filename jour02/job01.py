@@ -11,6 +11,10 @@ class Rectangle:
         self._largeur = largueur
         return self._largeur
     
+    def afficher(self):
+        return f'la longueur du triangle est de {self._longueur} et a une largueur de {self._largeur}'
+    
 rectangle = Rectangle(10,5)
 print(rectangle.modif_longueur(5))
 print(rectangle.modif_largueur(3))
+print(rectangle.afficher())
