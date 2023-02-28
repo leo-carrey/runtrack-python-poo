@@ -38,12 +38,9 @@ class Livre:
         if self.disponible == False:
             self.disponible == True
             return "le livre est rendue"
-        
-    
-    
-    
+
 Livre.disponible = True
-livre = Livre("Les miss","Jean",1, True)
+livre = Livre("Les miss","Jean",0, True)
 livre.modif_titre("Les misérables")
 livre.modif_auteur("Jean Valjean")
 print(livre.modif_nombre_depages(288))
